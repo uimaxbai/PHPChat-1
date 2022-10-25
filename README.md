@@ -13,7 +13,7 @@ we use logs to store chat logs (phpchat.gq/log.html)
 we also use mysqlremote to save user data such as passwords
 speaking of passwords, they are encrypted securely
 
-##Issues
+## Issues
 if an issue ever arises, please report on the issue page
 we can delete or alter account data if needed
 
