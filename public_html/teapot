@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="robots" content="noindex">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>418 I'm a teapot</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+      IMG.logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto }
+      .text {
+        text-align: center;
+      }
+      .title {
+        font-size: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="/logo.png" class="logo" height="125">
+    <div class="text">
+      <div class="title">
+        <h1><br>418</h1>
+      </div>
+    <h1>I am a teapot. I won't brew coffee for you.</h1>
+    <hr>
+    <em style="color: lightgray;"><br>I am a teapot, short and stout. Tip me over and pour me out.</em>
+    <li>
+        <ul><p style="color: red;">The responding entity may be short and stout.</p></ul>
+    </li>
+    
+    <button type="button" class="button" onclick="location.href='/index.php';"><span>Go back home</span></button>
+  </div>
+  </body>
+</html>

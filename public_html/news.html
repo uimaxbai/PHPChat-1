@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>PHPChat: A no-faff chat room</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="PHPChat: A no-faff simple chatroom" />
+        <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width, height=device-height, target-densitydpi=device-dpi">
+        <link type="text/css" rel="stylesheet" href="/style.css?v=5" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <script src="https://kit.fontawesome.com/049529442a.js" crossorigin="anonymous"></script>
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#2d89ef">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width, height=device-height, target-densitydpi=device-dpi">
+        <style>
+            .img {
+                display: block;
+                margin-left: 0px;
+                margin-right: auto;
+                max-height: 300px;
+                height: auto;
+                width: auto\9; /* ie8 */
+                cursor: pointer;
+                padding: 1%;
+                border-radius: 15%;
+            }
+            @media (prefers-color-scheme: dark) {
+                .img {
+                    filter: brightness(0.85);
+                }
+            }
+            .article {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: left;
+                border-left: 6px solid #2F02FF;
+                padding: 20px;
+                cursor: pointer;
+                max-width: 600px;
+                height: auto;
+                width: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="sidenav">
+          <a href="/newinterface.php?themeChange=true">Change theme</a>
+          <a href="/newinterface.php?s=1">Main Chаtroom</a>
+          <a href="/newinterface.php?s=2">2nd Chаtroom</a>
+          <a href="/newinterface.php?s=3">Private chаtrooms</a>
+          <a href="/newinterface.php?s=4">Direct Messаges</a>
+          <a href="/news.html">Latest News</a>
+          <a class="logout" href="/newinterface.php?s=5">Logout</a>
+          <a class="bottom" onclick="window.scrollTo(0,document.body.scrollHeight);">Scroll to 
+          bottom</a>
+        </div>
+        <div class="sidenav-mobile">
+          <a href="/newinterface.php?s=1"><i class="fa-solid fa-circle-1"></i></a>
+          <a href="/newinterface.php?s=2"><i class="fa-solid fa-circle-2"></i></a>
+          <a href="/newinterface.php?s=3"><i class="fa-solid fa-circle-p"></i></a>
+          <a href="/newinterface.php?s=4"><i class="fas fa-comments-alt"></i></a>
+          <a href="/news.html"><i class="fa-solid fa-newspaper"></i></a>
+          <a href="/logout.php"><i style="color: red;" class="fa-solid fa-right-from-bracket"></i></a>
+        </div>
+        <div class="main">
+        <img src="/logo.png" class="logo" onclick="location.href='/index.php';" />
+        
+        <h1>Latest news:</h1>
+        <div class="article" onclick="location.href='/news/new_ui.html';">
+            <img src="/new_ui.png" class="img" />
+            <h3>NEW UI + Upcoming Themes!</h3><span style="color:lightgray;">14/10/22 at 16:37</span>
+            <p>PHPChat has its first UI change as it turns 1 month old!</p></div>
+        <div class="article" onclick="location.href='/news/logins.html';">
+            <img src="loginsystem.png" class="img">
+            <h3>PHPChat Login + Main Chatroom word filter!!!</h3><span style="color:lightgray;">04/10/22 at 20:25</span>
+            <p>PHPChat is finally using a GoneRogue login system (no emails yet?)! Get ready for changes, and also a new explicit word filter for Chatroom 1 in this article.</p></div>
+        <div class="article" onclick="location.href='/news/rollback.html';">
+            <img src="favicon-32x32.png" class="img">
+            <h3>PHPChat Accidental Rollback</h3><span style="color:lightgray;">25/09/22 at 10:29</span>
+            <p>Major rollback accidentally caused - oops. Issues may prevail for several days.</p></div>
+            
+</div>
+        
+    </body>
+</html>

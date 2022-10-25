@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <title>PHPChat: A no-faff chat room</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="PHPChat: A no-faff simple chatroom" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="/style.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="https://kit.fontawesome.com/049529442a.js" crossorigin="anonymous"></script>
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff"><style>
+      .chat1 {
+        float: left;
+        margin: 50px;
+        font-family: TT;
+      }
+      .chat2 {
+        float: right;
+        margin: 50px;
+        font-family: TT;
+      }
+      .pp {
+        float: left;
+        margin: 50px;
+        font-family: TT;
+      }
+      .test {
+        float: right;
+        margin: 50px;
+        font-family: TT;
+      }
+      .news {
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 20px;
+          height: auto;
+          width: auto;
+      }
+      .button-private,
+      .button {
+        background-color: #e6e600;
+        border: none;
+        border-radius: 12px;
+        text-align: center;
+        cursor: pointer;
+        transition-duration: 0.4s;
+        padding: 16px 16px;
+        color: white;
+        font-size: 20px;
+      }
+      .button-unusable {
+        background-color: #444444;
+        color: white;
+        border: none;
+        border-radius: 12px;
+        text-align: center;
+        cursor: not-allowed;
+        transition-duration: 0.4s;
+        padding: 16px 16px;
+        font-size: 20px;
+      }
+      .button-phpchat {
+        background-color: #0000ff;
+        color: white;
+        border: none;
+        border-radius: 12px;
+        text-align: center;
+        cursor: pointer;
+        transition-duration: 0.4s;
+        padding: 16px 16px;
+        font-size: 20px;
+      }
+      .button:hover {
+        background-color: white;
+        color: black;
+        border: 2px solid #e6e600;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      }
+      .button-phpchat:hover {
+        border: 2px solid #e6e600;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      }
+      @keyframes slide{
+        to {
+          background-position: 20vw;
+        }
+      }
+      .button-private:hover{
+        border: 2px solid #e6e600;
+        background-image: linear-gradient(
+          to right, 
+          #E7484F,
+          #F68B1D, 
+          #FCED00,
+          #009E4F,
+          #00AAC3,
+          #732982,
+          #E7484F,
+          #F68B1D, 
+          #FCED00,
+          #009E4F,
+          #00AAC3,
+          #732982,
+          #E7484F,
+          #F68B1D, 
+          #FCED00,
+          #009E4F,
+          #00AAC3,
+          #732982
+        );
+        animation: slide 2s linear infinite;
+      }
+      .button-private span,
+      .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+      .button-private span:after,
+      .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+      .button-private:hover span,
+      .button:hover span {
+        padding-right: 25px;
+      }
+      .button-private:hover span:after,
+      .button:hover span:after {
+              opacity: 1;
+              right: 0;
+            }
+            @media (prefers-color-scheme: dark) {
+                #enter:hover {
+                  background: #666;
+                  color: white;
+                }
+                .button:hover {
+                  background: #666;
+                  color: white;
+                }
+                #submitmsg:hover {
+                  background: #666;
+                  color: white;
+                }
+                #chatroom,
+                #usermsg,
+                #name {
+                  color: white;
+                  background-color: #666;
+                }
+                #chatbox {
+                  background: #666;
+                }
+            }
+    </style>
+    </head>
+    <div id="rob">
+        <h1>@rob</h1>
+        
+    </div>
+    <div id="max">
+        <h1>@max</h1>
+        
+    </div>
+    <div id="teapot">
+        <h1>@teapot</h1>
+        
+    </div>
+</html>

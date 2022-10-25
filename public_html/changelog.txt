@@ -1,0 +1,8 @@
+Changelog
+
+***😊😊😊Devs post changes in here😊😊😊***
+
+&& CHANGE 30/09 by @rob&&&
+created changelog.txt
+changed so chat now also displays date posted
+added link to changelog.html with iframe in main page
