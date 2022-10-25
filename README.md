@@ -31,3 +31,8 @@ stats about license
 license.md 
 or
 https://choosealicense.com/licenses/gpl-3.0/
+
+
+## Changelog
+
+25/10 - now public repositary
